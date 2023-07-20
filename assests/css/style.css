@@ -213,3 +213,10 @@ body {
   letter-spacing: -0.175px;
   opacity: 0.75;
 }
+
+@media (max-width: 720px) {
+  .component__box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
