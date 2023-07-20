@@ -1,0 +1,215 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  /* Colors Primary */
+  --color-cyan: #2ab2af;
+  --color-lightGray: #e5eff5;
+  --color-grayishBlue: #98a6bd;
+  --color-white: #ffffff;
+  --color-brightYellow: #c0df34;
+
+  /* Font Weigh */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* CSS RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* better for people who browse with the keyboard and know where they are on the site, so I set a different style, making it more visible, taking it from the default.
+ */
+/* *:focus,
+*:focus-visible {
+  outline: #646464 dotted 4px;
+  outline-offset: 4px;
+} */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+button,
+[type="button"] {
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #e6eff5;
+  /* improves text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+.padding {
+  padding: 2.5rem;
+}
+
+.container {
+  /* max-width: 43.688rem;
+  padding: 0 2rem;
+  margin: 0 auto; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.component {
+  border-radius: 0.5rem;
+  max-width: 43.688rem;
+
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+
+.component__community {
+  background: var(--color-white);
+  border-radius: 0.5rem 0.5rem 0 0;
+  max-width: 650px;
+}
+
+.component__community-title {
+  font: var(--fw-bold) 1.5rem/1.16 "Karla", sans-serif;
+  color: var(--color-cyan);
+  letter-spacing: -0.3px;
+  margin-bottom: 1.5rem;
+}
+
+.component__subtitle {
+  font: var(--fw-bold) 1.125rem/1.16rem "Karla", sans-serif;
+  margin-bottom: 0.688rem;
+  color: var(--color-white);
+}
+.component__subtitle--gren {
+  color: var(--color-brightYellow);
+}
+
+.component__desc {
+  font: var(--fw-bold) 1rem/1.625rem "Karla", sans-serif;
+  color: #9aa7be;
+  letter-spacing: -0.2px;
+}
+
+.component__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.component__sub {
+  background-color: var(--color-cyan);
+  border-radius: 0 0 0 0.313rem;
+}
+
+.component__sub-price {
+  font: var(--fw-bold) 2rem/1.15 "Karla", sans-serif;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.688rem;
+  color: var(--color-white);
+}
+
+.component__subtitle--bottom {
+  margin-bottom: 1.125rem;
+}
+
+.component__sub-price--month {
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.25rem;
+}
+
+.component__desc--white {
+  color: var(--color-white);
+  margin-bottom: 1.625rem;
+  font-weight: var(--fw-regular);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font: var(--fw-regular) 1rem/1.625rem "Karla", sans-serif;
+  background-color: var(--color-brightYellow);
+  padding: 15px 89px;
+  color: var(--color-white);
+  border-radius: 0.313rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #c0df34d8;
+}
+
+.component__box-why {
+  position: relative;
+  background-color: var(--color-cyan);
+  border-radius: 0 0 0.313rem 0;
+}
+
+.component__why {
+  position: relative;
+  z-index: 3;
+}
+
+.component__box-why::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+}
+
+.component__why-item {
+  color: var(--color-white);
+  font-size: 0.875rem;
+  line-height: 1.42;
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+}
