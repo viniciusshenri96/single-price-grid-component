@@ -210,13 +210,65 @@ body {
   color: var(--color-white);
   font-size: 0.875rem;
   line-height: 1.42;
-  letter-spacing: -0.175px;
+  letter-spacing: -0.011rem;
   opacity: 0.75;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 43.75em) {
+  .padding {
+    padding: 1.75rem 1.5rem 2rem 1.5rem;
+  }
+
+  .container {
+    padding: 4.5rem 2rem 3.875rem 2rem;
+  }
+
   .component__box {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .component__community-title {
+    font-size: 1.25rem;
+    letter-spacing: -0.016rem;
+  }
+
+  .component__subtitle {
+    font-size: 0.938rem;
+    letter-spacing: -0.012rem;
+  }
+
+  .component__desc {
+    font-size: 0.875rem;
+    letter-spacing: -0.011rem;
+  }
+
+  .component__sub,
+  .component__why {
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+
+  .component__box-why {
+    border-radius: 0;
+  }
+
+  .btn:link,
+  .btn:visited {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 21.875rem) {
+  .container,
+  .padding {
+    padding: 1.5rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 0.85rem;
+    padding: 0.938rem 1.875rem;
   }
 }
